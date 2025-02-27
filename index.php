@@ -743,8 +743,63 @@ $teamMembers = [
 
     </section>
 
-    <!-- team -->
 
+    <?php
+    $imagePairs = [
+        [
+            'before' => 'images/compair1.jpg',
+            'after' => 'images/compair2.jpg'
+        ],
+        [
+            'before' => 'images/compair1.jpg',
+            'after' => 'images/compair2.jpg'
+        ],
+        [
+            'before' => 'images/compair1.jpg',
+            'after' => 'images/compair2.jpg'
+        ],
+        [
+            'before' => 'images/compair1.jpg',
+            'after' => 'images/compair2.jpg'
+        ],
+
+
+    ];
+    ?>
+
+    <section>
+        <div class="containerFull">
+            <h5 class="fontHeading fontWeight600 text_dark_gold text-center">
+                Our Work
+            </h5>
+            <h4 class="text-center heading fontWeight700 mt-4">
+                See Our Work
+            </h4>
+
+            <div class="row  mt-5">
+                <?php foreach ($imagePairs as $index => $pair): ?>
+                    <div class="col-md-6 mb-4">
+                        <div class='item_compair'>
+                            <div class='img background-img' style="background:url('<?= $pair['before'] ?>')"></div>
+                            <div class='img foreground-img' style="background:url('<?= $pair['after'] ?>')"></div>
+
+                            <span class="mark-label before-label">Before</span>
+                            <span class="mark-label after-label">After</span>
+
+                            <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+                            <div class='slider-button'></div>
+                        </div>
+
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- team -->
     <section>
         <div class="containerFull">
             <h5 class="fontHeading  fontWeight600 text_dark_gold text-center">
@@ -979,8 +1034,147 @@ $teamMembers = [
                     </div>
                 <?php endforeach; ?>
             </div>
+        </div>
+    </section>
+
+    <section class="" style="background-color:#a19c9c12;">
+        <div class="containerFull">
+            <h4 class="fontHeading fontWeight700 heading text-center mt-3 ">
 
 
+                Our Frequently Asked Questions
+            </h4>
+
+            <div class="row mt-5">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="border mb-2 rounded-3 p-3">
+                            <h2 class="h5 mb-0">
+                                <a href="#" class="text-reset d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    Can I trial block before paying?
+                                    <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quae harum adipisci
+                                    possimus et. Iusto pariatur iste nam
+                                    incidunt ratione modi.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border mb-2 rounded-3 p-3">
+                            <h2 class="h5 mb-0">
+                                <a href="#" class="text-reset d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                    How are additional plan billed?
+                                    <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3">
+                                    Sed urna felis, dapibus quis leo nec, luctus
+                                    auctor augue. Nam gravida placerat sem vitae
+                                    rutrum. Integer accumsan, enim et facilisis
+                                    eleifend, ante ligula
+                                    ornare nulla, sed pharetra tortor diam eget
+                                    magna.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border mb-2 rounded-3 p-3">
+                            <h2 class="h5 mb-0">
+                                <a href="#" class="text-reset d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    When should I change my plan?
+                                    <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Inventore tenetur cum
+                                    doloremque iusto molestiae. Minus beatae
+                                    quam cumque modi quidem asperiores
+                                    aliquam pariatur in iste.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border mb-2 rounded-3 p-3">
+                            <h2 class="h5 mb-0">
+                                <a href="#" class="text-reset d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    What payment methods do you offer?
+                                    <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Inventore tenetur cum
+                                    doloremque iusto molestiae. Minus beatae
+                                    quam cumque modi quidem asperiores
+                                    aliquam pariatur in iste.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border mb-2 rounded-3 p-3">
+                            <h2 class="h5 mb-0">
+                                <a href="#" class="text-reset d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    What is your refund policy?
+                                    <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Inventore tenetur cum
+                                    doloremque iusto molestiae. Minus beatae
+                                    quam cumque modi quidem asperiores
+                                    aliquam pariatur in iste.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border mb-2 rounded-3 p-3">
+                            <h2 class="h5 mb-0">
+                                <a href="#" class="text-reset d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    How are paid plans billed when moving other
+                                    plan?
+                                    <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Inventore tenetur cum
+                                    doloremque iusto molestiae. Minus beatae
+                                    quam cumque modi quidem asperiores
+                                    aliquam pariatur in iste.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         </div>
     </section>
@@ -1060,6 +1254,30 @@ $teamMembers = [
     </div>
     <?php include 'include/footer-links.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input[name='slider']").on("input change", function () {
+                const sliderPos = $(this).val();
+                const parent = $(this).closest('.item_compair');
+                parent.find('.foreground-img').css('width', `${sliderPos}%`);
+                parent.find('.slider-button').css('left', `calc(${sliderPos}% - 18px)`);
+
+                if (sliderPos >= 99) {
+                    parent.find('.after-label').fadeOut();
+                } else {
+                    parent.find('.after-label').fadeIn();
+                }
+
+                if (sliderPos <= 1) {
+                    parent.find('.before-label').fadeOut();
+                } else {
+                    parent.find('.before-label').fadeIn();
+                }
+
+            });
+        });
+    </script>
 
 
     <script>
