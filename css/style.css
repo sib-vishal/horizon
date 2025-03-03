@@ -733,7 +733,7 @@ section {
   text-overflow: ellipsis;
 }
 .specialization_slider_prev,
-.specialization_slider_next,.team_slider_next,.team_slider_prev {
+.specialization_slider_next,.team_slider_next,.team_slider_prev,.testimonial_next,.testimonial_prev {
   cursor: pointer;
   position: absolute;
 
@@ -748,12 +748,12 @@ section {
   box-shadow: 0 0 10px 1px #3333335b;
   border-radius: 30px;
 }
-.specialization_slider_prev,.team_slider_prev {
+.specialization_slider_prev,.team_slider_prev,.testimonial_prev {
   left: -20px;
   top: 45%;
   transform: translateY(-50%);
 }
-.specialization_slider_next,.team_slider_next {
+.specialization_slider_next,.team_slider_next,.testimonial_next {
   right: -20px;
   top: 45%;
   transform: translateY(-50%);
@@ -924,6 +924,7 @@ section {
 .item_testimonial {
   background-color: #fff;
   padding: 30px;
+  border: 1px solid #3333333b;
 }
 .author {
   display: flex;

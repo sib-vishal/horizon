@@ -1054,13 +1054,14 @@ $projects = [
                      At its heart, we believe design is about usability and these are the guiding principles for our work.",
                     "rating" => 5
                 ],
+
                 [
-                    "name" => "Jane Smith",
-                    "role" => "Interior Designer",
+                    "name" => "Michael Johnson",
+                    "role" => "Project Manager",
                     "image" => "images/icons/profile.webp",
-                    "review" => "Our mission is to blend aesthetics with functionality. We ensure our designs reflect 
-                     our clients' visions while maximizing usability.",
-                    "rating" => 4
+                    "review" => "With years of experience, we provide top-notch project management services to ensure 
+                     smooth execution and on-time delivery.",
+                    "rating" => 5
                 ],
                 [
                     "name" => "Michael Johnson",
@@ -1069,43 +1070,67 @@ $projects = [
                     "review" => "With years of experience, we provide top-notch project management services to ensure 
                      smooth execution and on-time delivery.",
                     "rating" => 5
-                ]
+                ],
+                [
+                    "name" => "Michael Johnson",
+                    "role" => "Project Manager",
+                    "image" => "images/icons/profile.webp",
+                    "review" => "With years of experience, we provide top-notch project management services to ensure 
+                     smooth execution and on-time delivery.",
+                    "rating" => 5
+                ],
             ];
             ?>
+            <div class="position-relative mt-5">
+                <button class="testimonial_prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
 
-            <div class="row mt-5">
-                <?php foreach ($testimonials as $testimonial): ?>
-                    <div class="col-lg-4">
-                        <div class="item_testimonial shadow">
-                            <div class="author">
-                                <div class="icon">
-                                    <img src="<?= $testimonial['image']; ?>" alt="">
-                                </div>
-                                <div class="content">
-                                    <h5 class="fontHeading fontWeight600">
-                                        <?= $testimonial['name']; ?>
-                                    </h5>
-                                    <p class="fontHeading mt-1 text-gray-50">
-                                        <?= $testimonial['role']; ?>
-                                    </p>
+
+                <div class="swiper testimonial-slider  ">
+                    <div class="swiper-wrapper ">
+                        <?php foreach ($testimonials as $testimonial): ?>
+                            <div class="swiper-slide ">
+                                <div class="">
+
+                                    <div class="item_testimonial   ">
+                                        <div class="author">
+                                            <div class="icon">
+                                                <img src="<?= $testimonial['image']; ?>" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="fontHeading fontWeight600"><?= $testimonial['name']; ?></h5>
+                                                <p class="fontHeading mt-1 text-gray-50"><?= $testimonial['role']; ?></p>
+                                            </div>
+                                        </div>
+    
+                                        <p class="mt-4"><?= $testimonial['review']; ?></p>
+    
+                                        <hr />
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <?php for ($i = 0; $i < $testimonial['rating']; $i++): ?>
+                                                    <img width="20px" src="images/icons/star.svg" alt="Star">
+                                                <?php endfor; ?>
+                                            </div>
+                                            <img src="https://html.rrdevs.net/artima/assets/imgs/update/client-slider/quite.png"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <p class="mt-4"><?= $testimonial['review']; ?></p>
-
-                            <hr />
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                    <?php for ($i = 0; $i < $testimonial['rating']; $i++): ?>
-                                        <img width="20px" src="images/icons/star.svg" alt="Image not found">
-                                    <?php endfor; ?>
-                                </div>
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/update/client-slider/quite.png" alt="">
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                <?php endforeach; ?>
+
+                    <!-- Swiper Pagination & Navigation -->
+
+                </div>
+                <button class="testimonial_next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <div class="swiper-pagination5  mt-4  justify-content-center d-flex"></div>
             </div>
+
         </div>
     </section>
 
@@ -1472,7 +1497,7 @@ $projects = [
 
 
     <script>
-        var swiper = new Swiper(".banner_slider", {
+        var swiper1 = new Swiper(".banner_slider", {
             // spaceBetween: 30,
             // centeredSlides: true,
             autoplay: {
@@ -1490,9 +1515,100 @@ $projects = [
             },
         });
     </script>
+
+    <script>
+        var swiper3 = new Swiper(".specialization_slider", {
+            spaceBetween: 30,
+            slidesPerView: 3,
+            // centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".specialization_slider_next",
+                prevEl: ".specialization_slider_prev",
+            },
+        });
+    </script>
+    <script>
+        var swiper6 = new Swiper(".testimonial-slider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination5",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".testimonial_next",
+                prevEl: ".testimonial_prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+
+            }
+        });
+    </script>
+    <script>
+        var swiper5 = new Swiper(".client_slider", {
+            spaceBetween: 20,
+            slidesPerView: 6,
+            // centeredSlides: true,
+
+            autoplay: {
+                delay: 0,
+
+
+                disableOnInteraction: false,
+            },
+            speed: 3000,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            navigation: false
+        });
+    </script>
+
+    <script>
+        var swiper6 = new Swiper(".myTeamSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination3",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".team_slider_next",
+                prevEl: ".team_slider_prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 }
+            }
+        });
+    </script>
     <script>
         var projects = <?= json_encode($projects); ?>;
-        var swiper = new Swiper(".main_project_slider", {
+        var swiper2 = new Swiper(".main_project_slider", {
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
@@ -1528,71 +1644,7 @@ $projects = [
 
         updateProjectDetails(0);
     </script>
-    <script>
-        var swiper2 = new Swiper(".specialization_slider", {
-            spaceBetween: 30,
-            slidesPerView: 3,
-            // centeredSlides: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination2",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".specialization_slider_next",
-                prevEl: ".specialization_slider_prev",
-            },
-        });
-    </script>
-    <script>
-        var swiper3 = new Swiper(".client_slider", {
-            spaceBetween: 20,
-            slidesPerView: 6,
-            // centeredSlides: true,
 
-            autoplay: {
-                delay: 0,
-
-
-                disableOnInteraction: false,
-            },
-            speed: 3000,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination2",
-                clickable: true,
-            },
-            navigation: false
-        });
-    </script>
-    <script>
-        var swiper2 = new Swiper(".myTeamSwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination3",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".team_slider_next",
-                prevEl: ".team_slider_prev",
-            },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1200: { slidesPerView: 4 }
-            }
-        });
-    </script>
 
 
 
