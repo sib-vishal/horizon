@@ -10,35 +10,41 @@
 			<div class="menu-links">
 
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 6.75a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5Z"></path></svg></a>
-					<ul class="submenu shadow">
-						<li>
-							<a href="">About</a>
-						</li>
-						<li>
-							<a href="">Our People</a>
-						</li>
-					</ul>
-				
-				</li>
+					<!-- <li><a href="#">Home</a></li> -->
+					<li><a href="#">About Us <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								viewBox="0 0 20 20" aria-hidden="true" height="1.5em" width="1.5em"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.75 6.75a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5Z">
+								</path>
+							</svg></a>
+						<ul class="submenu shadow">
+							<li>
+								<a href="">About</a>
+							</li>
+							<li>
+								<a href="">Our People</a>
+							</li>
+						</ul>
+
+					</li>
 					<li><a href="#">Architecture</a></li>
 					<li><a href="#">Interior</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Clients</a></li>
+					<!-- <li><a href="#">Projects</a></li> -->
+					<!-- <li><a href="#">Clients</a></li> -->
 					<li><a href="#">Contact Us</a></li>
 				</ul>
 
 
+				<!-- <div class="headerBtn d-flex align-items-center">
+					<a class="btnHeader" href="">
+					Contact Us | <i class="fa-solid fa-arrow-right"></i>
+
+					</a>
+
+				</div> -->
 
 
-			</div>
-			<div class="headerBtn d-flex align-items-center">
-				<a class="btnHeader" href="">
-					Get a Quote | <i class="fa-solid fa-arrow-right"></i>
-
-				</a>
-				
 			</div>
 
 		</div>
