@@ -692,45 +692,6 @@ $projects = [
             </div>
         </div>
     </section>
-
-    <section class="coreCompetencies ">
-        <div class="containerFull">
-            <div class="row">
-                <div class="col-lg-5 position-relative">
-                    <div class="item_left  d-flex  justify-content-center align-items-center outline-bg-3 ">
-                        <div class=" logo_item   p-5  text-center ">
-                            <img loading="lazy" decoding="async" src="images/logo.png" alt="Core Competencies">
-
-                            <h5 class="heading fontHeading text-center text-white mt-4">
-                                Core Competencies
-                            </h5>
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-7">
-
-                    <?php foreach ($coreCompetencies as $competency): ?>
-                        <div class="item_coreCompetencies mb-4 p-5 ">
-                            <img src="<?= $competency['img']; ?>" loading="lazy" decoding="async" width="60" alt="" />
-                            <h4 class="fontHeading  sub_heading  mt-3"><?= $competency['title']; ?>
-                            </h4>
-                            <p class="mt-3 text-white"><?= $competency['description']; ?></p>
-                        </div>
-                    <?php endforeach; ?>
-
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- specialization -->
     <!-- /* our project */ -->
     <section class="">
 
@@ -791,6 +752,45 @@ $projects = [
         </div>
     </section>
     <!-- /* our project */ -->
+
+    <section class="coreCompetencies ">
+        <div class="containerFull">
+            <div class="row">
+                <div class="col-lg-5 position-relative">
+                    <div class="item_left  d-flex  justify-content-center align-items-center outline-bg-3 ">
+                        <div class=" logo_item   p-5  text-center ">
+                            <img loading="lazy" decoding="async" src="images/logo.png" alt="Core Competencies">
+
+                            <h5 class="heading fontHeading text-center text-white mt-4">
+                                Core Competencies
+                            </h5>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+
+                    <?php foreach ($coreCompetencies as $competency): ?>
+                        <div class="item_coreCompetencies mb-4 p-5 ">
+                            <img src="<?= $competency['img']; ?>" loading="lazy" decoding="async" width="60" alt="" />
+                            <h4 class="fontHeading  sub_heading  mt-3"><?= $competency['title']; ?>
+                            </h4>
+                            <p class="mt-3 text-white"><?= $competency['description']; ?></p>
+                        </div>
+                    <?php endforeach; ?>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- specialization -->
     <section class="infographics"
         style="background-image: url('https://html.rrdevs.net/artima/assets/imgs/experience/experience-bg.jpg');">
         <div class="containerFull">
@@ -922,26 +922,32 @@ $projects = [
     $imagePairs = [
         [
             'before' => 'images/compair1.jpg',
-            'after' => 'images/compair2.jpg'
+            'after' => 'images/compair2.jpg',
+            'title' => 'Grand Plaza Mall - Retail',
+            'client_name' => 'Grand Properties',
+            'location' => 'Thane',
+            'design_team' => 'Amit Patel | Sneha Desai'
+        ],
+        [
+           'before' => 'images/compair1.jpg',
+            'after' => 'images/compair2.jpg',
+            'title' => 'Skyline Towers - Residential',
+            'client_name' => 'Skyline Developers',
+            'location' => 'Mumbai',
+            'design_team' => 'Rahul Verma | Neha Kapoor'
         ],
         [
             'before' => 'images/compair1.jpg',
-            'after' => 'images/compair2.jpg'
-        ],
-        [
-            'before' => 'images/compair1.jpg',
-            'after' => 'images/compair2.jpg'
-        ],
-        [
-            'before' => 'images/compair1.jpg',
-            'after' => 'images/compair2.jpg'
-        ],
-
-
+            'after' => 'images/compair2.jpg',
+            'title' => 'City Center - Commercial',
+            'client_name' => 'Urban Infra',
+            'location' => 'Pune',
+            'design_team' => 'Vikram Ahuja | Priya Mehta'
+        ]
     ];
     ?>
 
-    <section>
+    <section class="position-relative outline-bg">
         <div class="containerFull">
             <h5 class="fontHeading fontWeight600 text_dark_gold text-center">
                 Our Work
@@ -950,23 +956,67 @@ $projects = [
                 See Our Work
             </h4>
 
-            <div class="row  mt-5">
-                <?php foreach ($imagePairs as $index => $pair): ?>
-                    <div class="col-md-6 mb-4">
-                        <div class='item_compair'>
-                            <div class='img background-img' style="background:url('<?= $pair['before'] ?>')"></div>
-                            <div class='img foreground-img' style="background:url('<?= $pair['after'] ?>')"></div>
+            <div class="mt-5 ImageCompair_main">
+                <div class="ImageCompair swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($imagePairs as $index => $pair): ?>
+                            <div class="swiper-slide">
+                                <div>
 
-                            <span class="mark-label before-label">Before</span>
-                            <span class="mark-label after-label">After</span>
+                                    <div class='item_compair bg_primary '>
+                                        <div class='img background-img' style="background:url('<?= $pair['before'] ?>')">
+                                        </div>
+                                        <div class='img foreground-img' style="background:url('<?= $pair['after'] ?>')">
+                                        </div>
 
-                            <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
-                            <div class='slider-button'></div>
-                        </div>
+                                        <span class="mark-label before-label">Before</span>
+                                        <span class="mark-label after-label">After</span>
 
+                                        <input type="range" min="1" max="100" value="50" class="slider" name='slider'
+                                            id="slider">
+                                        <div class='slider-button'></div>
+                                    </div>
+                                    <div class="">
+                                        <div class="bg_primary px-5 py-4 d-flex justify-content-between align-items-center">
+
+                                            <div>
+
+                                                <h4 id="title" class="fontHeading small_heading fontWeight600  text-white">
+                                                <?= $pair['title'] ?></h4>
+                                                <p id="client_info" class="fontWeight600 mt-3 text-white">CLIENT NAME -
+                                                <?= $pair['client_name'] ?>
+                                                    | LOCATION - <?= $pair['location'] ?></p>
+
+                                                <p id="design_team" class="fontWeight600 mt-2 text-white">DESIGN TEAM - <?= $pair['design_team'] ?></p>
+                                            </div>
+
+
+
+                                            <div class="projects_btn  d-flex gap-3 ">
+                                                <button class="project-prev image-compair_prev">
+                                                    <i class="fa-solid fa-angle-left"></i>
+                                                </button>
+                                                <button class="project-next image-compair_next">
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-                <?php endforeach; ?>
+
+
+
+                </div>
+
             </div>
+
+
+           
         </div>
     </section>
 
@@ -1103,9 +1153,9 @@ $projects = [
                                                 <p class="fontHeading mt-1 text-gray-50"><?= $testimonial['role']; ?></p>
                                             </div>
                                         </div>
-    
+
                                         <p class="mt-4"><?= $testimonial['review']; ?></p>
-    
+
                                         <hr />
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
@@ -1607,6 +1657,26 @@ $projects = [
         });
     </script>
     <script>
+        var swiper7 = new Swiper(".ImageCompair", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination6",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".image-compair_next",
+                prevEl: ".image-compair_prev",
+            },
+
+        });
+    </script>
+    <script>
         var projects = <?= json_encode($projects); ?>;
         var swiper2 = new Swiper(".main_project_slider", {
             autoplay: {
@@ -1624,7 +1694,7 @@ $projects = [
             },
             on: {
                 slideChange: function () {
-                    var activeIndex = swiper.realIndex;
+                    var activeIndex = this.realIndex;
                     updateProjectDetails(activeIndex);
                 }
             }
