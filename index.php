@@ -91,27 +91,135 @@ $whyChhose = [
 ];
 
 $teamMembers = [
+    // Founders
+    // [
+    //     "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2025/02/hemal-1024x682.jpg",
+    //     "name" => "AR. HEMAL SHAH",
+    //     "position" => "Founder",
+    //     "department" => "Founders"
+    // ],
+    // [
+    //     "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/Screenshot-2024-11-06-173144-e1730895092870.png",
+    //     "name" => "AMITA SHAH",
+    //     "position" => "Founder",
+    //     "department" => "Founders"
+    // ],
+
+    // Design Team
     [
-        'image' => 'https://html.rrdevs.net/artima/assets/imgs/our-team/team-2.jpg',
-        'name' => 'Daniel Smith',
-        'position' => 'Chef Executive'
+        "image" => "images/team/2-1-200x300.png",
+        "name" => "AR. DHARMIK CHHABHAYIA",
+        "position" => "Architect",
+        "department" => "Design Team"
     ],
     [
-        'image' => 'https://html.rrdevs.net/artima/assets/imgs/our-team/team-2.jpg',
-        'name' => 'William Lucas',
-        'position' => 'Senior Architect'
+        "image" => "images/team/3-200x300.png",
+        "name" => "AR. NEHA DOSHI",
+        "position" => "Architect",
+        "department" => "Design Team"
     ],
     [
-        'image' => 'https://html.rrdevs.net/artima/assets/imgs/our-team/team-2.jpg',
-        'name' => 'Daniel Jack',
-        'position' => 'Designer'
+        "image" => "images/team/4-200x300.png",
+        "name" => "AR. VRUTIKA GOHIL",
+        "position" => "Architect",
+        "department" => "Design Team"
     ],
     [
-        'image' => 'https://html.rrdevs.net/artima/assets/imgs/our-team/team-2.jpg',
-        'name' => 'Daniel Jack',
-        'position' => 'Designer'
+        "image" => "images/team/5-200x300.png",
+        "name" => "AR. SIDDHARTH PATEL",
+        "position" => "Architect",
+        "department" => "Design Team"
+    ],
+
+    // Working Drawing Team
+    [
+        "image" => "images/team/23-200x300.png",
+        "name" => "AR. ABHAY DIWALE",
+        "position" => "Architect",
+        "department" => "Working Drawing Team"
+    ],
+    [
+        "image" => "images/team/24-200x300.png",
+        "name" => "AR. ATHARVA TATKARE",
+        "position" => "Architect",
+        "department" => "Working Drawing Team"
+    ],
+
+    // Interior Design Team
+    [
+        "image" => "images/team/34-200x300.png",
+        "name" => "DHARANA SHAH",
+        "position" => "Interior Designer",
+        "department" => "Interior Design Team"
+    ],
+    [
+        "image" => "images/team/35-200x300.png",
+        "name" => "DHWANI VAGHASIYA",
+        "position" => "Interior Designer",
+        "department" => "Interior Design Team"
+    ],
+    [
+        "image" => "images/team/36-200x300.png",
+        "name" => "GANESH PATNE",
+        "position" => "Interior Designer",
+        "department" => "Interior Design Team"
+    ],
+
+    // Department Heads
+    [
+        "image" => "images/team/37-200x300.png",
+        "name" => "SUDHIR KANCHAN",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+    [
+        "image" => "images/team/38-200x300.png",
+        "name" => "PRATIK HATHIWALA",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+    [
+        "image" => "images/team/39-200x300.png",
+        "name" => "AR. VINAY KADAM",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+    [
+        "image" => "images/team/40-200x300.png",
+        "name" => "HIREN CHOTALIYA",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+
+    // Administration Department
+    [
+        "image" => "images/team/42-199x300.png",
+        "name" => "SHEELA GOWDA",
+        "position" => "Administrator",
+        "department" => "Administration Department"
+    ],
+    [
+        "image" => "images/team/43-208x300.png",
+        "name" => "NAVNATH UTEKAR",
+        "position" => "Administrator",
+        "department" => "Administration Department"
+    ],
+    [
+        "image" => "images/team/44-206x300.png",
+        "name" => "MANOJ VARADELLI",
+        "position" => "Administrator",
+        "department" => "Administration Department"
+    ],
+
+    // Accounts Department
+    [
+        "image" => "images/team/45-203x300.png",
+        "name" => "DEEPAK CHIKHALE",
+        "position" => "Accountant",
+        "department" => "Accounts Department"
     ]
 ];
+
 
 
 
@@ -634,7 +742,7 @@ $projects = [
                 See Our Work
             </h4>
             <div class="project_slider position-relative mt-5">
-              
+
                 <div class="swiper main_project_slider">
                     <div class="swiper-wrapper">
                         <?php foreach ($projects as $project): ?>
@@ -875,26 +983,43 @@ $projects = [
             <h4 class="text-center heading fontWeight700 mt-4 ">
                 Meet Our Highly Professional Team
             </h4>
-
-
-            <div class="row mt-5">
-
-                <?php foreach ($teamMembers as $member): ?>
-                    <div class="col-lg-3">
-
-
-                        <div class="team_item ">
-                            <div class="team_image">
-                                <img src="<?= $member['image']; ?>" alt="image not found">
+            <div class="team_slider  mt-5 position-relative">
+                <button class="team_slider_prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="swiper myTeamSwiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($teamMembers as $member): ?>
+                            <div class="swiper-slide">
+                                <div class="team_item">
+                                    <div class="team_image">
+                                        <img src="<?= $member['image']; ?>" alt="image not found">
+                                    </div>
+                                    <div class="team_content">
+                                        <h6 class="fontHeading text-white"><?= $member['name']; ?></h6>
+                                        <!-- <p class="text-white-50"><?= $member['position']; ?></p> -->
+                                    </div>
+                                </div>
                             </div>
-                            <div class="team_content">
-                                <h4 class="fontHeading text-white"><?= $member['name']; ?></h4>
-                                <p class="text-white-50"><?= $member['position']; ?></p>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                <?php endforeach; ?>
+
+
+
+                    <!-- Pagination and Navigation Buttons -->
+                    <!-- <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+                <button class="team_slider_next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <div class="swiper-pagination3  mt-4  justify-content-center d-flex"></div>
             </div>
+
+
+
+
         </div>
     </section>
 
@@ -1444,6 +1569,31 @@ $projects = [
             navigation: false
         });
     </script>
+    <script>
+        var swiper2 = new Swiper(".myTeamSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination3",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".team_slider_next",
+                prevEl: ".team_slider_prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 }
+            }
+        });
+    </script>
+
 
 
 </body>

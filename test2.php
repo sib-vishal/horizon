@@ -1,59 +1,159 @@
 <?php
-$images = [
+$teamMembers = [
+    // Founders
+    // [
+    //     "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2025/02/hemal-1024x682.jpg",
+    //     "name" => "AR. HEMAL SHAH",
+    //     "position" => "Founder",
+    //     "department" => "Founders"
+    // ],
+    // [
+    //     "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/Screenshot-2024-11-06-173144-e1730895092870.png",
+    //     "name" => "AMITA SHAH",
+    //     "position" => "Founder",
+    //     "department" => "Founders"
+    // ],
 
+    // Design Team
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/2-1-200x300.png",
+        "name" => "AR. DHARMIK CHHABHAYIA",
+        "position" => "Architect",
+        "department" => "Design Team"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/3-200x300.png",
+        "name" => "AR. NEHA DOSHI",
+        "position" => "Architect",
+        "department" => "Design Team"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/4-200x300.png",
+        "name" => "AR. VRUTIKA GOHIL",
+        "position" => "Architect",
+        "department" => "Design Team"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/5-200x300.png",
+        "name" => "AR. SIDDHARTH PATEL",
+        "position" => "Architect",
+        "department" => "Design Team"
+    ],
 
-    // University Logos
-    'https://www.onlinephdcourse.com/wp-content/themes/alfa-theme/assets/images/u-logo.png',
-    'https://www.onlinephdcourse.com/wp-content/themes/alfa-theme/assets/images/u-logo1.jpg',
-    'https://www.onlinephdcourse.com/wp-content/themes/alfa-theme/assets/images/u-logo2.jpg',
-    'https://www.onlinephdcourse.com/wp-content/themes/alfa-theme/assets/images/u-logo3.jpg',
-    'https://marketingexperts.in/projects/fasttrack/dynamic/assets/images/nmims.jpeg',
-    'https://www.onlinephdcourse.com/wp-content/themes/alfa-theme/assets/images/u-logo6.jpg',
-    'https://marketingexperts.in/projects/fasttrack/dynamic/assets/images/chandigarh-university.jpg',
-    'https://marketingexperts.in/projects/fasttrack/dynamic/assets/images/bimtech.jpg',
-    'https://marketingexperts.in/projects/fasttrack/dynamic/assets/images/amrita.jpg'
+    // Working Drawing Team
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/23-200x300.png",
+        "name" => "AR. ABHAY DIWALE",
+        "position" => "Architect",
+        "department" => "Working Drawing Team"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/24-200x300.png",
+        "name" => "AR. ATHARVA TATKARE",
+        "position" => "Architect",
+        "department" => "Working Drawing Team"
+    ],
+
+    // Interior Design Team
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/34-200x300.png",
+        "name" => "DHARANA SHAH",
+        "position" => "Interior Designer",
+        "department" => "Interior Design Team"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/35-200x300.png",
+        "name" => "DHWANI VAGHASIYA",
+        "position" => "Interior Designer",
+        "department" => "Interior Design Team"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/36-200x300.png",
+        "name" => "GANESH PATNE",
+        "position" => "Interior Designer",
+        "department" => "Interior Design Team"
+    ],
+
+    // Department Heads
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/37-200x300.png",
+        "name" => "SUDHIR KANCHAN",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/38-200x300.png",
+        "name" => "PRATIK HATHIWALA",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/39-200x300.png",
+        "name" => "AR. VINAY KADAM",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/40-200x300.png",
+        "name" => "HIREN CHOTALIYA",
+        "position" => "Head of Department",
+        "department" => "Department Heads"
+    ],
+
+    // Administration Department
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/42-199x300.png",
+        "name" => "SHEELA GOWDA",
+        "position" => "Administrator",
+        "department" => "Administration Department"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/43-208x300.png",
+        "name" => "NAVNATH UTEKAR",
+        "position" => "Administrator",
+        "department" => "Administration Department"
+    ],
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/44-206x300.png",
+        "name" => "MANOJ VARADELLI",
+        "position" => "Administrator",
+        "department" => "Administration Department"
+    ],
+
+    // Accounts Department
+    [
+        "image" => "https://www.horizonarchitects.co.in/wp-content/uploads/2024/11/45-203x300.png",
+        "name" => "DEEPAK CHIKHALE",
+        "position" => "Accountant",
+        "department" => "Accounts Department"
+    ]
 ];
 
-if (isset($_POST['download_all'])) {
-    $zip = new ZipArchive();
-    $zipFileName = "images.zip";
 
-    if ($zip->open($zipFileName, ZipArchive::CREATE) === TRUE) {
-        foreach ($images as $imageUrl) {
-            $imageName = basename($imageUrl);
-            $imageContent = file_get_contents($imageUrl);
-            
-            if ($imageContent !== false) {
-                $zip->addFromString($imageName, $imageContent);
-            }
+$zip = new ZipArchive();
+$zipFile = "team_images.zip";
+
+if ($zip->open($zipFile, ZipArchive::CREATE | ZipArchive::OVERWRITE) === TRUE) {
+    foreach ($teamMembers as $member) {
+        $imageUrl = $member['image'];
+        $imageName = basename($imageUrl);
+
+        $imageData = file_get_contents($imageUrl);
+        if ($imageData !== false) {
+            $zip->addFromString($imageName, $imageData);
         }
-        $zip->close();
-
-        // Force file download
-        header('Content-Type: application/zip');
-        header('Content-Disposition: attachment; filename="' . $zipFileName . '"');
-        header('Content-Length: ' . filesize($zipFileName));
-        readfile($zipFileName);
-        
-        // Remove the ZIP file after download
-        unlink($zipFileName);
-        exit;
-    } else {
-        echo "Failed to create ZIP file.";
     }
+    $zip->close();
+
+    // Force download
+    header('Content-Type: application/zip');
+    header('Content-Disposition: attachment; filename="' . $zipFile . '"');
+    header('Content-Length: ' . filesize($zipFile));
+    readfile($zipFile);
+
+    // Delete the zip file after download
+    unlink($zipFile);
+} else {
+    echo "Failed to create ZIP file!";
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download All Images</title>
-</head>
-<body>
-    <form method="post">
-        <button type="submit" name="download_all">Download All Images</button>
-    </form>
-</body>
-</html>
