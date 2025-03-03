@@ -1,5 +1,4 @@
-<?php $page = 'home';
-?>
+<?php $page = 'home'; ?>
 <?php
 
 $services = [
@@ -116,8 +115,69 @@ $teamMembers = [
 
 
 
-
+$coreCompetencies = [
+    [
+        "id" => 1,
+        "title" => "Planning Competence",
+        "description" => "We believe that planning is the key to making a project the best of what it should be. The simpler and efficient the plan, the better planning derives benefits in minimal space deficiency, elevation, and aesthetics."
+    ],
+    [
+        "id" => 2,
+        "title" => "Executional Workforce",
+        "description" => "We have one of the most passionate and hardworking strength of staff who deliver the most precise details of working and coordinated drawings with perplexing speed and simplicity. We evidently comprehend the best knowledge in terms of merging R.C.C., Services, and liaisoning requirements. Keeping all updated and alert is the key. We make sure to stay connected digitally. We make sure that our drawings are tallied with the liasoning drawings. Our supervision on site is precise and thorough."
+    ],
+    [
+        "id" => 3,
+        "title" => "Integration Of Liasoning And Architectural Drawings Along With R.C.C And Services",
+        "description" => "Right from the design stage, we make sure that our data is conversant with the latest standards in approval and liaisoning. Our combined coordination with the liaisoning makes sure that the data that reaches our clients and then further to the site is amply matching the liaisoning drawings. We make sure that there is no difference between our Working Details and R.C.C. drawings, ensuring minimal hurdles for approvals and OC."
+    ],
+    [
+        "id" => 4,
+        "title" => "Detailing And Interior Aesthetics",
+        "description" => "We stand tall as a separate Interior Design team with members who have more than 15 years of experience in detailing. Hence, we give end-to-end solutions inclusive of show flats, sample flats, grand entrance lobbies, typical floor lobbies, railings, and staircase details in the most modern and aesthetically detailed manner."
+    ],
+    [
+        "id" => 5,
+        "title" => "Complete End To End Solutions",
+        "description" => "The structure/building remains our responsibility till the OC; hence service and speed is the key. Our coordination and service are smart as well as prompt, leaving minimal or no room for error."
+    ]
+];
 ?>
+<?php
+$projects = [
+    [
+        "category" => "Commercial",
+        "title" => "Ossia Developers",
+        "client_name" => "Ossia Developers",
+        "location" => "Borivali",
+        "status" => "Completed",
+        "design_team" => "Dharana Shah | Hiren Chotalia",
+        "image" => "images/banner/banner-2.jpg",
+        "view_more_link" => "#"
+    ],
+    [
+        "category" => "Residential",
+        "title" => "Skyline Heights",
+        "client_name" => "Skyline Group",
+        "location" => "Andheri",
+        "status" => "Ongoing",
+        "design_team" => "Neha Sharma | Raj Mehta",
+        "image" => "images/banner/banner.jpg",
+        "view_more_link" => "#"
+    ],
+    [
+        "category" => "Retail",
+        "title" => "Grand Plaza Mall",
+        "client_name" => "Grand Properties",
+        "location" => "Thane",
+        "status" => "In Progress",
+        "design_team" => "Amit Patel | Sneha Desai",
+        "image" => "images/banner/banner-3.jpg",
+        "view_more_link" => "#"
+    ]
+];
+?>
+
 
 
 <!DOCTYPE html>
@@ -147,11 +207,60 @@ $teamMembers = [
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="slide-image" src="images/banner.jpg" alt="">
+                    <img class="slide-image" src="images/banner/banner-3.jpg" alt="">
                     <div class="slide-content">
                         <div class="containerFull">
                             <div class="slide-content-innner">
-                                <div class="text-content">
+                                <!-- <div class="text-content">
+                                    <h1 class="banner_item-title  fontHeading fontWight700 ">
+                                        Creating Spaces Through <br /> <span>Innovative Design.</span>
+                                    </h1>
+
+                                    <p class="banner_discription title">
+                                        Welcome to Horizon Architects, crafting timeless interiors that tell your story.
+                                        Discover a
+                                        world where design meets emotion.
+                                    </p>
+
+
+                                    <div class="mt-5 ">
+                                        <a class="callActionBtn" href="tel: +91-9930911997">
+                                            <div class="iconPhone pulse">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <div class="rightIcon">
+                                                <p class="fontWeight700  ">Call to our Experts</p>
+                                                <h4 class="title mt-1 text-white fontWeight700 fontHeading">
+                                                    +91-9930911997</h4>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="d-inline-block btnHeader ms-5"> Know More</a>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="video_btn">
+                                    <div class="video_layer_1">
+                                        <div class="video_layer_2">
+                                            <a href="#" class="icon_play">
+                                                <i class="fa-solid fa-play"></i>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-image" src="images/banner/banner.jpg" alt="">
+                    <div class="slide-content">
+                        <div class="containerFull">
+                            <div class="slide-content-innner">
+                                <!-- <div class="text-content">
                                     <h1 class="banner_item-title  fontHeading fontWight700 ">
                                         Creating Spaces Through <br /> <span>Innovative Design.</span>
                                     </h1>
@@ -193,7 +302,7 @@ $teamMembers = [
                                     </div>
 
 
-                                </div>
+                                </div> -->
 
 
                             </div>
@@ -203,11 +312,11 @@ $teamMembers = [
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img class="slide-image" src="images/banner.jpg" alt="">
+                    <img class="slide-image" src="images/banner/banner-2.jpg" alt="">
                     <div class="slide-content">
                         <div class="containerFull">
                             <div class="slide-content-innner">
-                                <div class="text-content">
+                                <!-- <div class="text-content">
                                     <h1 class="banner_item-title  fontHeading fontWight700 ">
                                         Creating Spaces Through <br /> <span>Innovative Design.</span>
                                     </h1>
@@ -249,63 +358,7 @@ $teamMembers = [
                                     </div>
 
 
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slide-image" src="images/banner.jpg" alt="">
-                    <div class="slide-content">
-                        <div class="containerFull">
-                            <div class="slide-content-innner">
-                                <div class="text-content">
-                                    <h1 class="banner_item-title  fontHeading fontWight700 ">
-                                        Creating Spaces Through <br /> <span>Innovative Design.</span>
-                                    </h1>
-
-                                    <p class="banner_discription title">
-                                        Welcome to Horizon Architects, crafting timeless interiors that tell your story.
-                                        Discover a
-                                        world where design meets emotion.
-                                    </p>
-
-
-                                    <div class="mt-5 ">
-                                        <a class="callActionBtn" href="tel: +91-9930911997">
-                                            <div class="iconPhone pulse">
-                                                <i class="fa fa-phone"></i>
-                                            </div>
-                                            <div class="rightIcon">
-                                                <p class="fontWeight700  ">Call to our Experts</p>
-                                                <h4 class="title mt-1 text-white fontWeight700 fontHeading">
-                                                    +91-9930911997</h4>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="d-inline-block btnHeader ms-5"> Know More</a>
-
-                                    </div>
-
-
-                                </div>
-                                <div class="video_btn">
-                                    <div class="video_layer_1">
-                                        <div class="video_layer_2">
-                                            <a href="#" class="icon_play">
-                                                <i class="fa-solid fa-play"></i>
-
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
+                                </div> -->
 
 
                             </div>
@@ -325,7 +378,7 @@ $teamMembers = [
     </div>
 
     <!-- about start -->
-    <section class="about_home">
+    <section class="about_home outline-bg">
         <div class="containerFull">
             <div class="row">
                 <div class="col-lg-6 pe-5">
@@ -361,7 +414,7 @@ $teamMembers = [
                     </h5>
 
                     <h4 class="fontHeading  fontWeight700 heading mt-4">
-                        We Help to Bring Your Dream Home to Reality
+                        Acknowledgment
                     </h4>
 
                     <h5 class="text-capitalize fontHeading  text_primary title mt-4">
@@ -369,16 +422,27 @@ $teamMembers = [
                     </h5>
 
                     <p class="mt-4">
-                        Horizon Architects is one of Mumbai’s leading architectural firms specializing in aspects of
-                        Design to Execution. The company was established in 2005 by Ar. Hemal Shah, offering innovative
-                        design solutions to a varied scale of projects and developers.
+                        Reflecting on this journey, I extend my deepest gratitude to all who have been instrumental in
+                        shaping my path
+                        and the growth of Horizon Architects.
+                        First, I thank my parents for their unwavering sacrifices and the blessings of my grandparents,
+                        which laid the
+                        foundation for my aspirations. To my wife, Ami, your steadfast support since the founding of
+                        Horizon Architects
+                        has been invaluable. By managing responsibilities beyond the firm, you’ve allowed me to focus on
+                        our vision
+                        with clarity.
+
                     </p>
 
-                    <p class="mt-3">With over two decades of experience, Horizon Architects has worked on projects of
-                        various
-                        scales, including residential, commercial, hospitality, institutional, and industrial
-                        developments. The firm is committed to blending creativity with practicality, ensuring that
-                        every project reflects a harmonious balance of aesthetics, efficiency, and sustainability.</p>
+                    <p class="mt-4">
+                        I am grateful to my mentors, Mr. Sanjay Puri and Mr. Jayesh Shah, for their guidance in
+                        planning, execution,
+                        and building professional confidence. Special thanks to my partner, Bhavin Modi—our journey from
+                        classmates to collaborators has been a testament to shared creativity.
+                    </p>
+
+
                     <div class="mt-4">
                         <a class="btnHeader" href="">
                             Know More | <i class="fa-solid fa-arrow-right"></i>
@@ -386,6 +450,89 @@ $teamMembers = [
                     </div>
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <section class="about_home outline-bg-2 pt-2">
+        <div class="containerFull">
+            <div class="row mt-5">
+
+                <div class="col-lg-6">
+
+                    <!-- <h5 class="fontHeading  text_dark_gold title">
+                        Welcome To Horizon
+                        Architects
+                    </h5> -->
+
+                    <h4 class="fontHeading  fontWeight700 heading">
+                        About Horizon
+                    </h4>
+
+                    <!-- <h5 class="text-capitalize fontHeading  text_primary title mt-4">
+                        Architecture is a freedom that one should express.
+                    </h5> -->
+
+                    <p class="mt-4">
+                        Founded with passion and driven by innovation, Horizon Architects excels in providing end-to-end
+                        architectural
+                        solutions to complex planning and regulatory challenges. Under the leadership of Hemal Shah, who
+                        graduated
+                        from Rachna Sansad's Academy of Architecture in 1999, the firm embodies a legacy of
+                        collaboration with
+                        industry pioneers like Hafeez Contractor and Mr. Jayesh Shah of JK and RI. Hemal’s experience as
+                        an
+                        Associate Architect with Sanjay Puri Architects from 2002 to 2006 refined his expertise and
+                        vision, culminating
+                        in the establishment of a practice committed to holistic architectural excellence.
+
+
+                    </p>
+
+                    <p class="mt-4">
+                        Horizon Architects collaborates with Mumbai, Thane, and other regions' leading developers to
+                        create
+                        transformative residential complexes, commercial hubs, office buildings, religious structures,
+                        and interior
+                        projects. Our meticulous approach integrates efficient FSI utilization, Vastu compliance, and
+                        innovative design
+                        solutions, delivering seamless and functional outcomes.
+                    </p>
+
+
+                    <div class="mt-4">
+                        <a class="btnHeader" href="">
+                            Know More | <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-5">
+                    <div class="img_box">
+                        <img src="images/hemal.jpg" alt="">
+
+                    </div>
+                    <!-- <div class="experience-box">
+                        <div class="img_logo">
+                            <span> Horizon</span> <br />
+                            <span> Architects</span>
+                        </div>
+                        <div class="exp ">
+                            <div class="number fontHeading">
+                                19
+                            </div>
+                            <div class="text-content fontHeading">
+                                Years of <br />
+                                Experience
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -432,10 +579,96 @@ $teamMembers = [
             </div>
         </div>
     </section>
+
+    <section class="coreCompetencies ">
+        <div class="containerFull">
+            <div class="row">
+                <div class="col-lg-5 position-relative">
+                    <div class="item_left  d-flex  justify-content-center align-items-center outline-bg-3 ">
+                        <div class=" logo_item   p-5  text-center ">
+                            <img loading="lazy" decoding="async" src="images/logo.png" alt="Core Competencies">
+
+                            <h5 class="heading fontHeading text-center mt-4">
+                                Core Competencies
+                            </h5>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+
+                    <?php foreach ($coreCompetencies as $competency): ?>
+                        <div class="item_coreCompetencies mb-4 p-5 bg-white">
+                            <h4 class="fontHeading  sub_heading "><?= $competency['id'] . ". " . $competency['title']; ?>
+                            </h4>
+                            <p class="mt-3"><?= $competency['description']; ?></p>
+                        </div>
+                    <?php endforeach; ?>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     <!-- specialization -->
     <!-- /* our project */ -->
-    <section>
-        <div class="our_projects">
+    <section class="">
+
+        <div class="containerFull">
+            <h5 class="fontHeading  text_dark_gold title text-center">
+                Our Projects
+            </h5>
+            <h4 class="fontHeading  fontWeight700 heading mt-4 text-center">
+                See Our Work
+            </h4>
+            <div class="project_slider position-relative mt-5">
+                <!-- Swiper Main Slider -->
+                <div class="swiper main_project_slider">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($projects as $project): ?>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="<?= $project['image']; ?>" alt="<?= $project['title']; ?>">
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Project Details (First slide shown by default) -->
+                <div class="project_slider_content p-5">
+                    <h5 id="category" class="fontHeading title fontWeight600 text-white-50">
+                        <?= $projects[0]['category']; ?>
+                    </h5>
+                    <h4 id="title" class="fontHeading heading fontWeight600 mt-4 text-white">
+                        <?= $projects[0]['title']; ?>
+                    </h4>
+                    <p id="client_info" class="fontWeight600 mt-3 text-white">
+                        CLIENT NAME - <?= $projects[0]['client_name']; ?> | LOCATION - <?= $projects[0]['location']; ?>
+                    </p>
+                    <p id="status" class="fontWeight600 mt-2 text-white">
+                        STATUS - <?= $projects[0]['status']; ?>
+                    </p>
+                    <p id="design_team" class="fontWeight600 mt-2 text-white">
+                        DESIGN TEAM - <?= $projects[0]['design_team']; ?>
+                    </p>
+                    <div class="mt-5">
+                        <a id="view_more_link" class="view-more" href="<?= $projects[0]['view_more_link']; ?>">
+                            View More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="our_projects">
             <div class="containerFull">
                 <div class="row">
                     <div class="col-lg-6">
@@ -614,7 +847,7 @@ $teamMembers = [
 
             </div>
 
-        </div>
+        </div> -->
     </section>
     <!-- /* our project */ -->
     <section class="infographics"
@@ -1299,6 +1532,44 @@ $teamMembers = [
             },
         });
     </script>
+   <script>
+    var projects = <?= json_encode($projects); ?>;
+    var swiper = new Swiper(".main_project_slider", {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".project-next",
+            prevEl: ".project-prev",
+        },
+        on: {
+            slideChange: function () {
+                var activeIndex = swiper.realIndex; 
+                updateProjectDetails(activeIndex);
+            }
+        }
+    });
+
+    function updateProjectDetails(index) {
+        var project = projects[index];
+
+        document.getElementById("category").innerText = project.category;
+        document.getElementById("title").innerText = project.title;
+        document.getElementById("client_info").innerText = 
+            "CLIENT NAME - " + project.client_name + " | LOCATION - " + project.location;
+        document.getElementById("status").innerText = "STATUS - " + project.status;
+        document.getElementById("design_team").innerText = "DESIGN TEAM - " + project.design_team;
+        document.getElementById("view_more_link").href = project.view_more_link;
+    }
+
+    updateProjectDetails(0);
+</script>
     <script>
         var swiper2 = new Swiper(".specialization_slider", {
             spaceBetween: 30,
