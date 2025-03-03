@@ -118,26 +118,31 @@ $teamMembers = [
 $coreCompetencies = [
     [
         "id" => 1,
+        "img" => 'images/icons/handshake.png',
         "title" => "Planning Competence",
         "description" => "We believe that planning is the key to making a project the best of what it should be. The simpler and efficient the plan, the better planning derives benefits in minimal space deficiency, elevation, and aesthetics."
     ],
     [
         "id" => 2,
+        "img" => 'images/icons/design.png',
         "title" => "Executional Workforce",
         "description" => "We have one of the most passionate and hardworking strength of staff who deliver the most precise details of working and coordinated drawings with perplexing speed and simplicity. We evidently comprehend the best knowledge in terms of merging R.C.C., Services, and liaisoning requirements. Keeping all updated and alert is the key. We make sure to stay connected digitally. We make sure that our drawings are tallied with the liasoning drawings. Our supervision on site is precise and thorough."
     ],
     [
         "id" => 3,
+        "img" => 'images/icons/data-management.png',
         "title" => "Integration Of Liasoning And Architectural Drawings Along With R.C.C And Services",
         "description" => "Right from the design stage, we make sure that our data is conversant with the latest standards in approval and liaisoning. Our combined coordination with the liaisoning makes sure that the data that reaches our clients and then further to the site is amply matching the liaisoning drawings. We make sure that there is no difference between our Working Details and R.C.C. drawings, ensuring minimal hurdles for approvals and OC."
     ],
     [
         "id" => 4,
+        "img" => 'images/icons/stock.png',
         "title" => "Detailing And Interior Aesthetics",
         "description" => "We stand tall as a separate Interior Design team with members who have more than 15 years of experience in detailing. Hence, we give end-to-end solutions inclusive of show flats, sample flats, grand entrance lobbies, typical floor lobbies, railings, and staircase details in the most modern and aesthetically detailed manner."
     ],
     [
         "id" => 5,
+        "img" => 'images/icons/groth.png',
         "title" => "Complete End To End Solutions",
         "description" => "The structure/building remains our responsibility till the OC; hence service and speed is the key. Our coordination and service are smart as well as prompt, leaving minimal or no room for error."
     ]
@@ -588,7 +593,7 @@ $projects = [
                         <div class=" logo_item   p-5  text-center ">
                             <img loading="lazy" decoding="async" src="images/logo.png" alt="Core Competencies">
 
-                            <h5 class="heading fontHeading text-center mt-4">
+                            <h5 class="heading fontHeading text-center text-white mt-4">
                                 Core Competencies
                             </h5>
 
@@ -600,10 +605,11 @@ $projects = [
                 <div class="col-lg-7">
 
                     <?php foreach ($coreCompetencies as $competency): ?>
-                        <div class="item_coreCompetencies mb-4 p-5 bg-white">
-                            <h4 class="fontHeading  sub_heading "><?= $competency['id'] . ". " . $competency['title']; ?>
+                        <div class="item_coreCompetencies mb-4 p-5 ">
+                            <img src="<?= $competency['img']; ?>" loading="lazy" decoding="async" width="60" alt="" />
+                            <h4 class="fontHeading  sub_heading  mt-3"><?= $competency['title']; ?>
                             </h4>
-                            <p class="mt-3"><?= $competency['description']; ?></p>
+                            <p class="mt-3 text-white"><?= $competency['description']; ?></p>
                         </div>
                     <?php endforeach; ?>
 
@@ -628,7 +634,7 @@ $projects = [
                 See Our Work
             </h4>
             <div class="project_slider position-relative mt-5">
-                <!-- Swiper Main Slider -->
+              
                 <div class="swiper main_project_slider">
                     <div class="swiper-wrapper">
                         <?php foreach ($projects as $project): ?>
@@ -641,8 +647,6 @@ $projects = [
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
-                <!-- Project Details (First slide shown by default) -->
                 <div class="project_slider_content p-5">
                     <h5 id="category" class="fontHeading title fontWeight600 text-white-50">
                         <?= $projects[0]['category']; ?>
@@ -664,190 +668,19 @@ $projects = [
                             View More <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
+
+                    <div class="projects_btn  d-flex gap-3 mt-5 ">
+                        <button class="project-prev">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="project-next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+
+                    </div>
                 </div>
             </div>
-
         </div>
-        <!-- <div class="our_projects">
-            <div class="containerFull">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h5 class="fontHeading text_dark_gold">
-                            Recent Project
-
-                        </h5>
-                        <h4 class="mt-3 fontHeading heading fontWeight700">
-                            Our Featured Projects
-                        </h4>
-                    </div>
-                    <div class="col-lg-6">
-                        <p>
-                            Sed id lacus volutpat, imperdiet quam a, fermentum mi. Etiam urna sapien, tempor in accumsan
-                            eu, consequat sed neque Etiam euismod volutpat lacus fringilla henr.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-lg-4 mb-4">
-                        <div class="item_project">
-                            <div class="img_box">
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/latest-project/latest-project-1.jpg"
-                                    alt="">
-                                <a class="icon" href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M14.3848 4.61475H23.3501V13.58" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <h4>
-                                    D-Orex Home Interior
-                                    is one of the most popular for
-                                </h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="item_project">
-                            <div class="img_box">
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/latest-project/latest-project-1.jpg"
-                                    alt="">
-                                <a class="icon" href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M14.3848 4.61475H23.3501V13.58" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <h4>
-                                    D-Orex Home Interior
-                                    is one of the most popular for
-                                </h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="item_project">
-                            <div class="img_box">
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/latest-project/latest-project-1.jpg"
-                                    alt="">
-                                <a class="icon" href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M14.3848 4.61475H23.3501V13.58" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <h4>
-                                    D-Orex Home Interior
-                                    is one of the most popular for
-                                </h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="item_project">
-                            <div class="img_box">
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/latest-project/latest-project-1.jpg"
-                                    alt="">
-                                <a class="icon" href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M14.3848 4.61475H23.3501V13.58" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <h4>
-                                    D-Orex Home Interior
-                                    is one of the most popular for
-                                </h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="item_project">
-                            <div class="img_box">
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/latest-project/latest-project-1.jpg"
-                                    alt="">
-                                <a class="icon" href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M14.3848 4.61475H23.3501V13.58" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <h4>
-                                    D-Orex Home Interior
-                                    is one of the most popular for
-                                </h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="item_project">
-                            <div class="img_box">
-                                <img src="https://html.rrdevs.net/artima/assets/imgs/latest-project/latest-project-1.jpg"
-                                    alt="">
-                                <a class="icon" href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M14.3848 4.61475H23.3501V13.58" stroke="#fff" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <h4>
-                                    D-Orex Home Interior
-                                    is one of the most popular for
-                                </h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-        </div> -->
     </section>
     <!-- /* our project */ -->
     <section class="infographics"
@@ -1532,44 +1365,44 @@ $projects = [
             },
         });
     </script>
-   <script>
-    var projects = <?= json_encode($projects); ?>;
-    var swiper = new Swiper(".main_project_slider", {
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".project-next",
-            prevEl: ".project-prev",
-        },
-        on: {
-            slideChange: function () {
-                var activeIndex = swiper.realIndex; 
-                updateProjectDetails(activeIndex);
+    <script>
+        var projects = <?= json_encode($projects); ?>;
+        var swiper = new Swiper(".main_project_slider", {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".project-next",
+                prevEl: ".project-prev",
+            },
+            on: {
+                slideChange: function () {
+                    var activeIndex = swiper.realIndex;
+                    updateProjectDetails(activeIndex);
+                }
             }
+        });
+
+        function updateProjectDetails(index) {
+            var project = projects[index];
+
+            document.getElementById("category").innerText = project.category;
+            document.getElementById("title").innerText = project.title;
+            document.getElementById("client_info").innerText =
+                "CLIENT NAME - " + project.client_name + " | LOCATION - " + project.location;
+            document.getElementById("status").innerText = "STATUS - " + project.status;
+            document.getElementById("design_team").innerText = "DESIGN TEAM - " + project.design_team;
+            document.getElementById("view_more_link").href = project.view_more_link;
         }
-    });
 
-    function updateProjectDetails(index) {
-        var project = projects[index];
-
-        document.getElementById("category").innerText = project.category;
-        document.getElementById("title").innerText = project.title;
-        document.getElementById("client_info").innerText = 
-            "CLIENT NAME - " + project.client_name + " | LOCATION - " + project.location;
-        document.getElementById("status").innerText = "STATUS - " + project.status;
-        document.getElementById("design_team").innerText = "DESIGN TEAM - " + project.design_team;
-        document.getElementById("view_more_link").href = project.view_more_link;
-    }
-
-    updateProjectDetails(0);
-</script>
+        updateProjectDetails(0);
+    </script>
     <script>
         var swiper2 = new Swiper(".specialization_slider", {
             spaceBetween: 30,
