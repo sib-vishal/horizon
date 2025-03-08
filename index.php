@@ -492,49 +492,26 @@ $projects = [
 
     <!-- about start -->
     <section class="about_home outline-bg">
-        <div class="containerFull">
+        <div class="containerFull overflow-hidden">
             <div class="row">
-                <div class="col-lg-6 pe-5">
-                    <div class="img_box">
-                        <img src="images/about.jpg" alt="">
-
-                    </div>
-                    <div class="experience-box">
-                        <div class="img_logo">
-                            <span> Horizon</span> <br />
-                            <span> Architects</span>
-                        </div>
-                        <div class="exp ">
-                            <div class="number fontHeading">
-                                19
-                            </div>
-                            <div class="text-content fontHeading">
-                                Years of <br />
-                                Experience
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
                 <div class="col-lg-6">
 
-                    <h5 class="fontHeading  text_dark_gold title">
+                    <h5 class="fontHeading  text_dark_gold title" data-aos="fade-up" data-aos-duration="1000">
                         Welcome To Horizon
                         Architects
                     </h5>
 
-                    <h4 class="fontHeading  fontWeight700 heading mt-4">
+                    <h4 class="fontHeading  fontWeight700 heading mt-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="50">
                         Acknowledgment
                     </h4>
 
-                    <h5 class="text-capitalize fontHeading  text_primary title mt-4">
+                    <h5 class="text-capitalize fontHeading  text_primary title mt-4" data-aos="fade-up"
+                        data-aos-duration="1000" data-aos-delay="70">
                         Architecture is a freedom that one should express.
                     </h5>
 
-                    <p class="mt-4">
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="80">
                         Reflecting on this journey, I extend my deepest gratitude to all who have been instrumental in
                         shaping my path
                         and the growth of Horizon Architects.
@@ -548,7 +525,7 @@ $projects = [
 
                     </p>
 
-                    <p class="mt-4">
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="90">
                         I am grateful to my mentors, Mr. Sanjay Puri and Mr. Jayesh Shah, for their guidance in
                         planning, execution,
                         and building professional confidence. Special thanks to my partner, Bhavin Modi—our journey from
@@ -556,74 +533,34 @@ $projects = [
                     </p>
 
 
-                    <div class="mt-4">
+                    <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                         <a class="btnHeader" href="">
                             Know More | <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
-            </div>
+                <div class="col-lg-6 pe-5">
+                    <div class="row">
+                        <div class="col-lg-6 mt-5" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+                            <div class="img_box">
+                                <img src="images/about.jpg" alt="">
 
-        </div>
-    </section>
+                            </div>
 
-    <section class="about_home outline-bg-2 pt-2">
-        <div class="containerFull">
-            <div class="row mt-5">
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000">
+                            <div class="img_box">
+                                <img src="https://classicthreearc.liquid-themes.com/wp-content/uploads/2022/02/pf-2.jpg"
+                                    alt="">
 
-                <div class="col-lg-6">
-
-                    <!-- <h5 class="fontHeading  text_dark_gold title">
-                        Welcome To Horizon
-                        Architects
-                    </h5> -->
-
-                    <h4 class="fontHeading  fontWeight700 heading">
-                        About Horizon
-                    </h4>
-
-                    <!-- <h5 class="text-capitalize fontHeading  text_primary title mt-4">
-                        Architecture is a freedom that one should express.
-                    </h5> -->
-
-                    <p class="mt-4">
-                        Founded with passion and driven by innovation, Horizon Architects excels in providing end-to-end
-                        architectural
-                        solutions to complex planning and regulatory challenges. Under the leadership of Hemal Shah, who
-                        graduated
-                        from Rachna Sansad's Academy of Architecture in 1999, the firm embodies a legacy of
-                        collaboration with
-                        industry pioneers like Hafeez Contractor and Mr. Jayesh Shah of JK and RI. Hemal’s experience as
-                        an
-                        Associate Architect with Sanjay Puri Architects from 2002 to 2006 refined his expertise and
-                        vision, culminating
-                        in the establishment of a practice committed to holistic architectural excellence.
-
-
-                    </p>
-
-                    <p class="mt-4">
-                        Horizon Architects collaborates with Mumbai, Thane, and other regions' leading developers to
-                        create
-                        transformative residential complexes, commercial hubs, office buildings, religious structures,
-                        and interior
-                        projects. Our meticulous approach integrates efficient FSI utilization, Vastu compliance, and
-                        innovative design
-                        solutions, delivering seamless and functional outcomes.
-                    </p>
-
-
-                    <div class="mt-4">
-                        <a class="btnHeader" href="">
-                            Know More | <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 ps-5">
-                    <div class="img_box">
-                        <img src="images/hemal.jpg" alt="">
+                            </div>
+                        </div>
 
                     </div>
+                    <!-- <div class="img_box">
+                        <img src="images/about.jpg" alt="">
+
+                    </div> -->
                     <!-- <div class="experience-box">
                         <div class="img_logo">
                             <span> Horizon</span> <br />
@@ -644,6 +581,67 @@ $projects = [
 
 
                 </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about_home outline-bg-2 pt-2">
+        <div class="containerFull overflow-hidden">
+            <div class="row mt-5">
+                <div class="col-lg-6 pe-5">
+                    <div class="img_box" data-aos="fade-right" data-aos-duration="1000"
+                    >
+                        <img src="images/hemal.jpg" alt="">
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6"  data-aos="fade-left" data-aos-duration="1000">
+
+
+
+                    <h4 class="fontHeading  fontWeight700 heading"  data-aos="fade-up" data-aos-duration="1000">
+                        About Horizon
+                    </h4>
+
+
+
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1000">
+                        Founded with passion and driven by innovation, Horizon Architects excels in providing end-to-end
+                        architectural
+                        solutions to complex planning and regulatory challenges. Under the leadership of Hemal Shah, who
+                        graduated
+                        from Rachna Sansad's Academy of Architecture in 1999, the firm embodies a legacy of
+                        collaboration with
+                        industry pioneers like Hafeez Contractor and Mr. Jayesh Shah of JK and RI. Hemal’s experience as
+                        an
+                        Associate Architect with Sanjay Puri Architects from 2002 to 2006 refined his expertise and
+                        vision, culminating
+                        in the establishment of a practice committed to holistic architectural excellence.
+
+
+                    </p>
+
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1000">
+                        Horizon Architects collaborates with Mumbai, Thane, and other regions' leading developers to
+                        create
+                        transformative residential complexes, commercial hubs, office buildings, religious structures,
+                        and interior
+                        projects. Our meticulous approach integrates efficient FSI utilization, Vastu compliance, and
+                        innovative design
+                        solutions, delivering seamless and functional outcomes.
+                    </p>
+
+
+                    <div class="mt-4" data-aos="fade-up" data-aos-duration="1000">
+                        <a class="btnHeader" href="">
+                            Know More | <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -652,15 +650,15 @@ $projects = [
     <!-- about end -->
 
     <section class="specialization">
-        <h5 class="text-white-50 text-center fontHeading fontWeight600">
+        <h5 class="text-white-50 text-center fontHeading fontWeight600" data-aos="flip-up" data-aos-duration="1000">
             What We Offer
         </h5>
-        <h4 class="mt-3 text-white heading text-center fontHeading fontWeight600">
+        <h4 class="mt-3 text-white heading text-center fontHeading fontWeight600" data-aos="fade-up" data-aos-duration="1000">
             We Are Experts In
         </h4>
         <div class="containerFull">
 
-            <div class=" mt-5 position-relative">
+            <div class=" mt-5 position-relative" data-aos="fade-up" data-aos-duration="1000">
                 <button class="specialization_slider_prev">
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
@@ -695,14 +693,14 @@ $projects = [
     <!-- /* our project */ -->
     <section class="">
 
-        <div class="containerFull">
-            <h5 class="fontHeading  text_dark_gold title text-center">
+        <div class="containerFull overflow-hidden">
+            <h5 class="fontHeading  text_dark_gold title text-center"  data-aos="fade-up" data-aos-duration="1000">
                 Our Projects
             </h5>
-            <h4 class="fontHeading  fontWeight700 heading mt-4 text-center">
+            <h4 class="fontHeading  fontWeight700 heading mt-4 text-center" data-aos="fade-up" data-aos-duration="1030">
                 See Our Work
             </h4>
-            <div class="project_slider position-relative mt-5">
+            <div class="project_slider position-relative mt-5" data-aos="zoom-in-up" data-aos-duration="1000">
 
                 <div class="swiper main_project_slider">
                     <div class="swiper-wrapper">
@@ -754,10 +752,10 @@ $projects = [
     <!-- /* our project */ -->
 
     <section class="coreCompetencies ">
-        <div class="containerFull">
+        <div class="containerFull " data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
-                <div class="col-lg-5 position-relative">
-                    <div class="item_left  d-flex  justify-content-center align-items-center outline-bg-3 ">
+                <div class="col-lg-5 position-relative" >
+                    <div class="item_left  d-flex  justify-content-center align-items-center outline-bg-3 " >
                         <div class=" logo_item   p-5  text-center ">
                             <img loading="lazy" decoding="async" src="images/logo.png" alt="Core Competencies">
 
@@ -773,7 +771,7 @@ $projects = [
                 <div class="col-lg-7">
 
                     <?php foreach ($coreCompetencies as $competency): ?>
-                        <div class="item_coreCompetencies mb-4 p-5 ">
+                        <div class="item_coreCompetencies mb-4 p-5 " data-aos="fade-up" data-aos-duration="1000">
                             <img src="<?= $competency['img']; ?>" loading="lazy" decoding="async" width="60" alt="" />
                             <h4 class="fontHeading  sub_heading  mt-3"><?= $competency['title']; ?>
                             </h4>
@@ -818,20 +816,20 @@ $projects = [
     <!-- why  chhose -->
     <section class="whyChoose">
         <div class="containerFull">
-            <h5 class="fontHeading  text_dark_gold title text-center">
+            <h5 class="fontHeading  text_dark_gold title text-center" data-aos="fade-up" data-aos-duration="1000">
                 Why Choose Us
             </h5>
-            <h4 class="fontHeading  fontWeight700 heading mt-4 text-center">
+            <h4 class="fontHeading  fontWeight700 heading mt-4 text-center" data-aos="fade-up" data-aos-duration="1000">
                 Why Choose Horizon Architects
             </h4>
-            <div class="row mt-5">
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1050">
                 <div class="col-lg-5 pe-5">
                     <section class="experience">
                         <div class="containerFull">
                             <div class="">
                                 <?php foreach ($whyChhose as $experience): ?>
 
-                                    <div class="item_why mb-5">
+                                    <div class="item_why mb-5" data-aos="fade-up" data-aos-duration="1000" >
                                         <div class="icon">
                                             <img src="images/icons/<?= $experience['image']; ?>" alt="image not found">
                                         </div>
@@ -880,10 +878,10 @@ $projects = [
     <!-- cta -->
 
     <section class="cta2">
-        <div class="containerFull">
+        <div class="containerFull overflow-hidden">
 
             <div class="row align-items-center">
-                <div class="col-lg-8">
+                <div class="col-lg-8"  data-aos="fade-left" data-aos-duration="1000">
                     <h3 class="large_heading fontHeading fontWeight500 text-white">
 
 
@@ -892,7 +890,7 @@ $projects = [
                     </h3>
 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4"  data-aos="fade-left" data-aos-duration="1000">
 
                     <div class="item_cta">
                         <p class="text-white-50">
@@ -929,7 +927,7 @@ $projects = [
             'design_team' => 'Amit Patel | Sneha Desai'
         ],
         [
-           'before' => 'images/compair1.jpg',
+            'before' => 'images/compair1.jpg',
             'after' => 'images/compair2.jpg',
             'title' => 'Skyline Towers - Residential',
             'client_name' => 'Skyline Developers',
@@ -949,14 +947,14 @@ $projects = [
 
     <section class="position-relative outline-bg">
         <div class="containerFull">
-            <h5 class="fontHeading fontWeight600 text_dark_gold text-center">
+            <h5 class="fontHeading fontWeight600 text_dark_gold text-center" data-aos="flip-up" data-aos-duration="1000">
                 Our Work
             </h5>
-            <h4 class="text-center heading fontWeight700 mt-4">
+            <h4 class="text-center heading fontWeight700 mt-4" data-aos="fade-up" data-aos-duration="1000">
                 See Our Work
             </h4>
 
-            <div class="mt-5 ImageCompair_main">
+            <div class="mt-5 ImageCompair_main" data-aos="fade-up" data-aos-duration="1000">
                 <div class="ImageCompair swiper">
                     <div class="swiper-wrapper">
                         <?php foreach ($imagePairs as $index => $pair): ?>
@@ -982,12 +980,16 @@ $projects = [
                                             <div>
 
                                                 <h4 id="title" class="fontHeading small_heading fontWeight600  text-white">
-                                                <?= $pair['title'] ?></h4>
+                                                    <?= $pair['title'] ?>
+                                                </h4>
                                                 <p id="client_info" class="fontWeight600 mt-3 text-white">CLIENT NAME -
-                                                <?= $pair['client_name'] ?>
-                                                    | LOCATION - <?= $pair['location'] ?></p>
+                                                    <?= $pair['client_name'] ?>
+                                                    | LOCATION - <?= $pair['location'] ?>
+                                                </p>
 
-                                                <p id="design_team" class="fontWeight600 mt-2 text-white">DESIGN TEAM - <?= $pair['design_team'] ?></p>
+                                                <p id="design_team" class="fontWeight600 mt-2 text-white">DESIGN TEAM -
+                                                    <?= $pair['design_team'] ?>
+                                                </p>
                                             </div>
 
 
@@ -1016,7 +1018,7 @@ $projects = [
             </div>
 
 
-           
+
         </div>
     </section>
 
@@ -1026,14 +1028,14 @@ $projects = [
     <!-- team -->
     <section>
         <div class="containerFull">
-            <h5 class="fontHeading  fontWeight600 text_dark_gold text-center">
+            <h5 class="fontHeading  fontWeight600 text_dark_gold text-center" data-aos="flip-up" data-aos-duration="1000">
                 Our Team
 
             </h5>
-            <h4 class="text-center heading fontWeight700 mt-4 ">
+            <h4 class="text-center heading fontWeight700 mt-4 " data-aos="fade-up" data-aos-duration="1000">
                 Meet Our Highly Professional Team
             </h4>
-            <div class="team_slider  mt-5 position-relative">
+            <div class="team_slider  mt-5 position-relative" data-aos="fade-up" data-aos-duration="1000">
                 <button class="team_slider_prev">
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
@@ -1066,10 +1068,6 @@ $projects = [
                 </button>
                 <div class="swiper-pagination3  mt-4  justify-content-center d-flex"></div>
             </div>
-
-
-
-
         </div>
     </section>
 
@@ -1079,13 +1077,13 @@ $projects = [
             <div class="row justify-content-center">
 
                 <div class="col-lg-7 text-center ">
-                    <h5 class="fontHeading title text_dark_gold">
+                    <h5 class="fontHeading title text_dark_gold" data-aos="fade-up" data-aos-duration="1000">
                         Testimonial
                     </h5>
-                    <h4 class=" text-white heading fontHeading fontWeight700">
+                    <h4 class=" text-white heading fontHeading fontWeight700" data-aos="fade-up" data-aos-duration="1000">
                         Our Happy Customer
                     </h4>
-                    <p class="mt-3 text-white">
+                    <p class="mt-3 text-white" data-aos="fade-up" data-aos-duration="1000">
                         Which is the same as saying through shrinking from toil and pain. These cases are perfectly
                         simple
                         and easy to distinguish.
@@ -1131,7 +1129,7 @@ $projects = [
                 ],
             ];
             ?>
-            <div class="position-relative mt-5">
+            <div class="position-relative mt-5" data-aos="fade-up" data-aos-duration="1000">
                 <button class="testimonial_prev">
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
@@ -1240,10 +1238,10 @@ $projects = [
     <section class="blog">
         <div class="containerFull">
 
-            <h5 class="fontHeading fonmtWeight600 text-center text_dark_gold ">
+            <h5 class="fontHeading fonmtWeight600 text-center text_dark_gold " data-aos="flip-up" data-aos-duration="1000">
                 News & Articles
             </h5>
-            <h4 class="fontHeading fontWeight700 heading text-center mt-3 ">
+            <h4 class="fontHeading fontWeight700 heading text-center mt-3 " data-aos="fade-up" data-aos-duration="1000">
 
                 Our Latest Blog Posts
             </h4>
@@ -1276,7 +1274,7 @@ $projects = [
             ];
             ?>
 
-            <div class="row mt-5">
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
                 <?php foreach ($blogs as $blog): ?>
                     <div class="col-lg-4">
                         <div class="blog-item">
@@ -1305,14 +1303,14 @@ $projects = [
 
     <section class="" style="background-color:#a19c9c12;">
         <div class="containerFull">
-            <h4 class="fontHeading fontWeight700 heading text-center mt-3 ">
+            <h4 class="fontHeading fontWeight700 heading text-center mt-3 " data-aos="zoom-in" data-aos-duration="1000">
 
 
                 Our Frequently Asked Questions
             </h4>
 
-            <div class="row mt-5">
-                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12" >
                     <div class="accordion" id="accordionExample">
                         <div class="border mb-2 rounded-3 p-3">
                             <h2 class="h5 mb-0">
@@ -1448,9 +1446,9 @@ $projects = [
 
     <section class="contact_form">
         <div class="containerFull">
-            <h4 class="fontHeading heading text-center text-white ">Send A Request To Us</h4>
+            <h4 class="fontHeading heading text-center text-white "  data-aos="flip-up" data-aos-duration="1000">Send A Request To Us</h4>
             <div class="row justify-content-center mt-5">
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
                     <div class="contact-form">
                         <form id="contactForm">
                             <div class="row">
@@ -1550,11 +1548,13 @@ $projects = [
         var swiper1 = new Swiper(".banner_slider", {
             // spaceBetween: 30,
             // centeredSlides: true,
+            effect: 'fade',
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false,
             },
             loop: true,
+            speed: 2000,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
