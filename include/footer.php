@@ -106,8 +106,8 @@
 
 			<div class="credits">
 
-				Designed &amp; Developed by <a class="text-dark" target="_blank"
-					href="http://sibinfotech.com/"><strong>SIB Infotech</strong></a>
+				<!-- Designed &amp; Developed by <a class="text-dark" target="_blank"
+					href="http://sibinfotech.com/"><strong>SIB Infotech</strong></a> -->
 			</div>
 
 		</div>
