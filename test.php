@@ -1,95 +1,62 @@
-<?php
-
-$services = [
-    [
-        "title" => "Architecture Design",
-        "description" => "We offer holistic design services including architecture, interior design, site design, planning, and feasibility services.",
-        "image" => "icon2-4-2.png"
-    ],
-    [
-        "title" => "Urban Design",
-        "description" => "Expertise on shaping character of the neighborhood, connecting places and people.",
-        "image" => "icon1-4-2.png"
-    ],
-    [
-        "title" => "Master Planning",
-        "description" => "Specially skilled in planning, designing and construction of building projects. Development and implementation of master plans and layouts.",
-        "image" => "icon3-4-2.png"
-    ],
-    [
-        "title" => "Institutional",
-        "description" => "Expertise in designing immersive institutional experiences integrating technology and various construction methods.",
-        "image" => "icon4-2-2.png"
-    ],
-    [
-        "title" => "Hospitality",
-        "description" => "Designing and conceptualizing bespoke spaces that communicate a brand's message and curating a memorable space for the consumers.",
-        "image" => "icon5-2-2.png"
-    ],
-    [
-        "title" => "Interior Design",
-        "description" => "Conceptualizing, creating and executing the interior environment that directly impacts the well-being of the consumers.",
-        "image" => "icon6-2-2.png"
-    ],
-    [
-        "title" => "Vastu Consultancy",
-        "description" => "Fostering a connection between the science of construction and vedics with the design, we promote blissful living.",
-        "image" => "icon2-4-2.png"
-    ],
-    [
-        "title" => "Peer Review",
-        "description" => "Consultancy, review, problem-solving of plans and designs is our forte.",
-        "image" => "icon1-4-2.png"
-    ],
-    [
-        "title" => "Landscape Design",
-        "description" => "Advisory and expertise on the design, planning and creation of recreational spaces.",
-        "image" => "icon3-4-2.png"
-    ]
-];
-
-
-if (isset($_GET['download'])) {
-    $zip = new ZipArchive();
-    $zipFile = "images.zip";
-    
-    if ($zip->open($zipFile, ZipArchive::CREATE) === TRUE) {
-        foreach ($services as $service) {
-            $imageUrl = $service['image'];
-            $imageData = file_get_contents($imageUrl);
-            $imageName = basename($imageUrl);
-            $zip->addFromString($imageName, $imageData);
-        }
-        $zip->close();
-    }
-    
-    header('Content-Type: application/zip');
-    header('Content-Disposition: attachment; filename="' . $zipFile . '"');
-    header('Content-Length: ' . filesize($zipFile));
-    readfile($zipFile);
-    unlink($zipFile);
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Images</title>
+    <title>GSAP Scroll Video Animation</title>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* Just for scrolling effect */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+        .containerFull {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        video {
+            width: 60%;
+            transition: width 0.5s ease;
+        }
+    </style>
 </head>
 <body>
-    <h2>Image Gallery</h2>
-    <div>
-        <?php foreach ($services as $service): ?>
-            <div style="display:inline-block; margin: 10px; text-align: center;">
-                <img src="<?= $service['image']; ?>" alt="<?= $service['title']; ?>" width="100"><br>
-                <a href="<?= $service['image']; ?>" download>Download</a>
-            </div>
-        <?php endforeach; ?>
-    </div>
-    <br>
-    <a href="?download=true"><button>Download All Images</button></a>
+
+    <section>
+        <div class="containerFull">
+            <video id="video" controls
+                src="https://videocdn.cdnpk.net/videos/6a9badbb-a5d0-5820-bfdb-1a02a6fbdc37/horizontal/previews/watermarked/large.mp4">
+            </video>
+        </div>
+    </section>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to("#video", {
+            width: "100%", // Expands to full width
+            scrollTrigger: {
+                trigger: "#video",
+                start: "top 80%", // When video reaches 80% of the viewport
+                end: "top 50%",
+                scrub: true, // Smooth scaling effect
+                onEnter: () => document.getElementById("video").play(), // Play video when it enters
+                onLeaveBack: () => document.getElementById("video").pause(), // Pause when scrolling back up
+            }
+        });
+    </script>
+
 </body>
 </html>

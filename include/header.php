@@ -20,19 +20,19 @@
 							</svg></a>
 						<ul class="submenu shadow">
 							<li>
-								<a href="">About</a>
+								<a href="about-us.php">About</a>
 							</li>
 							<li>
-								<a href="">Our People</a>
+								<a href="our-people.php">Our People</a>
 							</li>
 						</ul>
 
 					</li>
-					<li><a href="#">Architecture</a></li>
-					<li><a href="#">Interior</a></li>
+					<li><a href="architecture.php">Architecture</a></li>
+					<li><a href="interior.php">Interior</a></li>
 					<!-- <li><a href="#">Projects</a></li> -->
 					<!-- <li><a href="#">Clients</a></li> -->
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="contact-us.php">Contact Us</a></li>
 				</ul>
 
 
